@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Arzok: El Tiempo Infinito — Volumen I</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyecto literario de Eduardo Granados: una saga épico-cósmica que explora los límites entre la fe, la memoria y el destino.">
+  <meta property="og:title" content="Arzok: El Tiempo Infinito — Volumen I">
+  <meta property="og:description" content="Una obra que combina historia, ciencia y espiritualidad.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://edugranados.github.io/Arzok-Tiempo-Infinito/">
+  <meta property="og:image" content="caratula.jpg">
+
+  <style>
+    :root {
+      --bg1:#081a2a;
+      --bg2:#0e2240;
+      --accent:#bfcfff;
+      --text:#e0e6ff;
+      --muted:#9fb3c8;
+      --link:#8bd0ff;
+    }
+
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color:var(--text);
+      background: radial-gradient(1200px 600px at 50% 0, var(--bg2), var(--bg1));
+      min-height:100vh;
+    }
+
+    /* NAV */
+    .nav{
+      display:flex;
+      justify-content:center;
+      background:rgba(0,0,0,0.3);
+      padding:1rem;
+      backdrop-filter:blur(8px);
+      position:sticky;
+      top:0;
+    }
+    .nav a{
+      color:var(--link);
+      text-decoration:none;
+      margin:0 1rem;
+      font-weight:600;
+    }
+    .nav a:hover{color:white}
+
+    /* HEADER */
+    header{
+      text-align:center;
+      padding:4rem 1rem;
+    }
+    header img{
+      width:300px;
+      border-radius:10px;
+      box-shadow:0 0 20px rgba(255,255,255,0.2);
+    }
+    header h1{
+      margin-top:1rem;
+      font-size:2.2rem;
+      color:var(--accent);
+    }
+    header p{color:var(--muted)}
+/* SECCIONES */
+    section{
+      max-width:800px;
+      margin:4rem auto;
+      padding:0 1.5rem;
+    }
+    section h2{
+      color:var(--accent);
+      border-bottom:1px solid var(--accent);
+      padding-bottom:.3rem;
+    }
+    section p{
+      line-height:1.7;
+    }
+
+    /* FORMULARIO */
+    form{
+      display:flex;
+      flex-direction:column;
+      gap:1rem;
+      margin-top:2rem;
+    }
+    input, textarea, button{
+      padding:.8rem;
+      border:none;
+      border-radius:5px;
+      font-size:1rem;
+    }
+    input, textarea{
+      background:#12284d;
+      color:white;
+    }
+    button{
+      background:var(--link);
+      color:#081a2a;
+      cursor:pointer;
+      font-weight:bold;
+    }
+    button:hover{
+      background:white;
+      color:#081a2a;
+    }
+
+    /* FOOTER */
+    footer{
+      text-align:center;
+      padding:2rem;
+      color:var(--muted);
+      font-size:.9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="nav">
+    <a href="#inicio">Inicio</a>
+    <a href="#sinopsis">Sinopsis</a>
+    <a href="#capitulos">Capítulos</a>
+    <a href="#comentarios">Comentarios</a>
+  </nav>
+
+  <header id="inicio">
+    <img src="caratula.jpg" alt="Carátula del libro Arzok: El Tiempo Infinito">
+    <h1>Arzok: El Tiempo Infinito — Volumen I</h1>
+    <p>de Eduardo Granados</p>
+  </header>
+
+  <section id="sinopsis">
+    <h2>Sinopsis</h2>
+    <p>
+      Durante siglos, Nilagraha y los mundos de la Confederación de Androssa vivieron en equilibrio. Hasta que la guerra lo quebró todo.  
+      En las cenizas de ese pacto renace la leyenda de los cristales de Arzok, reliquias vivientes capaces de abrir portales y torcer la realidad.  
+      Matteo Astraeus, un joven que carga con un medallón ancestral, deberá decidir entre recordar o destruir el tiempo mismo.
+    </p>
+  </section>
+
+  <section id="capitulos">
+    <h2>Capítulos de muestra</h2>
+    <ul>
+      <li><a href="capitulo1.html">Capítulo I — El despertar de Nilagraha</a></li>
+      <li><a href="capitulo2.html">Capítulo II — La Cámara del Ámbar</a></li>
+      <li><a href="capitulo3.html">Capítulo III — Amalfi, el eco del mar</a></li>
+    </ul>
+  </section>
+
+  <section id="comentarios">
+    <h2>Déjanos tus comentarios</h2>
+    <form action="https://formspree.io/f/xyz" method="POST">
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <input type="email" name="email" placeholder="Tu correo" required>
+      <textarea name="mensaje" rows="4" placeholder="Escribe tu comentario..." required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 Eduardo Granados · Proyecto Arzok: El Tiempo Infinito  
+  </footer>
+</body>
+</html>
